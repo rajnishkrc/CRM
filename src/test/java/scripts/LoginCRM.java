@@ -27,7 +27,7 @@ public class LoginCRM {
 		driver.findElement(By.id("loginbtn")).click();
 		WebElement label = driver.findElement(By.id("ctl00_lblcompanyname"));
 		String actualResult = label.getText();
-		Assert.assertEquals(actualResult, "Techcanvass");
+		Assert.assertEquals(actualResult, "Techcanvass", "Doesn't match");
 
 	}
 
